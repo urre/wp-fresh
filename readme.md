@@ -10,3 +10,5 @@ Yes, there are fancy plugins for this as well. This is my simple goto solution.
 + Simply run `bash wpfresh.sh`
 
 ![Alt text](sample.png?raw=true "Sample output")
+
+Sample output...
