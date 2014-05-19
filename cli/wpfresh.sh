@@ -16,11 +16,11 @@ DBUSER="root"
 DBHOST="localhost"
 
 # 1. Remove local tables
-sh mysite_remove_tables.sh
+sh wpfresh_remove_tables.sh
 
 # 2. Run mysqldump on the server
 echo "$(tput setaf 4)❑ Starting MySQL dump on server...$(tput sgr0)"
-ssh user@12.34.456.789 'bash -s' < mysite_dump_tables.sh
+ssh user@12.34.456.789 'bash -s' < wpfresh_dump_tables.sh
 echo "$(tput setaf 2)✔ MySQL dump OK$(tput sgr0)"
 
 # 3. Copy mysql dump to local machine
