@@ -20,17 +20,17 @@ sh mysite_remove_tables.sh
 
 # 2. Run mysqldump on the server
 echo "$(tput setaf 4)❑ Starting MySQL dump on server...$(tput sgr0)"
-ssh root@94.247.168.254 'bash -s' < mysite_dump_tables.sh
+ssh user@12.34.456.789 'bash -s' < mysite_dump_tables.sh
 echo "$(tput setaf 2)✔ MySQL dump OK$(tput sgr0)"
 
 # 3. Copy mysql dump to local machine
 echo "$(tput setaf 4)❑ Copying MySQL dump to local machine...$(tput sgr0)"
-rsync --rsh='ssh' -av --partial root@94.247.168.254:../../var/www/www2.mysite.se/dbdump_mysite.sql /Applications/MAMP/htdocs/mysite/
+rsync --rsh='ssh' -av --partial user@12.34.456.789:../../var/www/www2.mysite.se/dbdump_mysite.sql /Applications/MAMP/htdocs/mysite/
 echo "$(tput setaf 2)✔ Copied MySQL dump OK$(tput sgr0)"
 
 # 4. Sync media (wp-content/uploads folder)
 echo "$(tput setaf 4)❑ Syncing media (wp-content/uploads folder)...$(tput sgr0)"
-rsync -avz --delete root@94.247.168.254:../../var/www/www2.mysite.se/wp-content/uploads/ /Applications/MAMP/htdocs/mysite/wp-content/uploads/
+rsync -avz --delete user@12.34.456.789:../../var/www/www2.mysite.se/wp-content/uploads/ /Applications/MAMP/htdocs/mysite/wp-content/uploads/
 echo "$(tput setaf 2)✔ Sync media OK$(tput sgr0)"
 
 # 5. Replace with local dev url (change strings in sed command below)
