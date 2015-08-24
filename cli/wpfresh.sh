@@ -10,9 +10,9 @@
 # **************************************************************************************
 
 # Credentials for your local system
-DBNAME="mydb"
-DBPASS="root"
-DBUSER="root"
+DBNAME="mysite"
+DBPASS="myuser"
+DBUSER="*********************"
 DBHOST="localhost"
 
 # 1. Remove local tables
