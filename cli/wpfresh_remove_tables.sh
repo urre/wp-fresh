@@ -4,8 +4,6 @@
 #
 # WP-FRESH
 # Dependency file - remove local tables
-# Edit credentials, folders and paths to match your enviroment
-# by @urre
 #
 # **************************************************************************************
 

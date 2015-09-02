@@ -2,16 +2,14 @@
 
 # **************************************************************************************
 #
-# WP-FRESH
+# Wp Fresh
 # Dependency file - make mysqldump on server
-# Edit credentials, folders and paths to match your enviroment
-# by @urre
 #
 # **************************************************************************************
 
 DBNAME="mysite"
 DBUSER="mysite"
-DBPASS="HNzZF2xbW5UsZZWE!M-b?cd8cg6-4rr/Q"
+DBPASS="*********************"
 DBHOST="12.34.456.789"
 BACKUP_FOLDER="/var/www/www.mysite.com/"
 BACKUP_FILE="$BACKUP_FOLDER/dbdump_$DBNAME.sql"

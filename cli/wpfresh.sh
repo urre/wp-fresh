@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # **************************************************************************************
-# WP-FRESH
+# Wp Fresh
 # Get production database and media (wp-content/uploads) synced to your development environment. Fresh!
-# Edit credentials, folders and paths to match your enviroment
-# Simply run bash wpfresh.sh to run
-# by @urre
 #
 # **************************************************************************************
 

@@ -1,14 +1,24 @@
-# WP-FRESH
+# Wp Fresh
 
-Get production database and media (wp-content/uploads) synced to your development environment. Fresh!
-Edit credentials, folders and paths to match your enviroment.
+Sync production database and media to development environment.
+
+### What?
+
++ Downloads and import database from production → development
++ Downloads media (wp-content/uploads/*) from production → development
+
+Fresh!
 
 Yes, there are fancy plugins for this as well. This is my simple goto solution.
 
-+ Keep cli folder in your root (same folder as wp-config.php) folder
-+ Go to cli folder `cd cli`
-+ Simply run `bash wpfresh.sh`
++ Edit credentials, folders and paths in the ``.sh``` files to match your enviroment
++ Keep the cli folder where you like, for example in your project root
++ Go to the cli folder and run the script
 
-![Alt text](sample.png?raw=true "Sample output")
+```bash
+	cd cli && ./wpfresh.sh
+```
 
-Sample output...
+![Sample output](https://cloud.githubusercontent.com/assets/307676/9640777/6d9cc06c-51b3-11e5-91f2-5baf27b7abfe.png)
+
+Sample output.
